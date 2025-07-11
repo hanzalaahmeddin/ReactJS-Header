@@ -3,6 +3,7 @@ import Home from "./Home"
 import About from "./About"
 import Header from "./Header"
 import Login from "./Login"
+import PagenotFound from "./PagenotFound"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/*" element={<PagenotFound />} />
       </Routes>
     </>
   )
