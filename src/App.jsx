@@ -8,6 +8,8 @@ import College from "./College"
 import Student from "./Student"
 import Department from "./Department"
 import Details from "./Details"
+import Users from "./Users"
+import UserDetails from "./userDetails"
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="department" element={<Department />} />
           <Route path="details" element={<Details />} />
         </Route>
+        <Route path="/users" element={<Users />} />
+        <Route path="/users/:id" element={<UserDetails />} />
       </Routes>
     </>
   )
