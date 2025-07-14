@@ -21,3 +21,14 @@ body {
 .navigation a:hover {
     color: red;
 }
+
+.collegeMenu a {
+    margin: 15px;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+}
+
+.collegeMenu a:hover {
+    color: red;
+}
