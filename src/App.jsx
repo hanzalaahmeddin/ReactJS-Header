@@ -10,6 +10,7 @@ import Department from "./Department"
 import Details from "./Details"
 import Users from "./Users"
 import UserDetails from "./userDetails"
+import GetAPI from "./GetAPI"
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
           <Route path="details" element={<Details />} />
         </Route>
         <Route path="/users" element={<Users />} />
-        <Route path="/users/:id" element={<UserDetails />} />
+        <Route path="/users/:id/:name?" element={<UserDetails />} />
+        <Route path="/getapi" element={<GetAPI />} />
       </Routes>
     </>
   )

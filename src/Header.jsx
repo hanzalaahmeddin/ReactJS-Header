@@ -1,12 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link, NavLink } from 'react-router'
 import "./header.css"
 
 function Header() {
     return (
         <div className='header'>
             <div className='logo'>
-                <img style={{ width: "150px" }} src="https://a2zcreatorz.com/wp-content/uploads/2024/03/a2zcreatorz-logo.png" alt="" srcset="" />
+                <img style={{ width: "150px" }} src="https://a2zcreatorz.com/wp-content/uploads/2024/03/a2zcreatorz-logo.png" alt="" />
             </div>
             <div className='navigation'>
                 <Link to="/">Home</Link>
@@ -14,6 +14,7 @@ function Header() {
                 <Link to="/login">Login</Link>
                 <Link to="/college">College</Link>
                 <Link to={"/users"} >Users</Link>
+                <NavLink to={"/getapi"} >Get API</NavLink>
             </div>
         </div>
     )
