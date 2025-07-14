@@ -6,6 +6,8 @@ import Login from "./Login"
 import PagenotFound from "./PagenotFound"
 import College from "./College"
 import Student from "./Student"
+import Department from "./Department"
+import Details from "./Details"
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/*" element={<PagenotFound />} />
         <Route path="/college" element={<College />}>College
           <Route path="student" element={<Student />} />
+          <Route path="department" element={<Department />} />
+          <Route path="details" element={<Details />} />
         </Route>
       </Routes>
     </>
