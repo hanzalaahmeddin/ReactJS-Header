@@ -4,9 +4,20 @@ body {
 }
 
 .header {
-    background: #222222;
+    background: #b6d8e1;
     padding: 10px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navigation a {
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation a:hover {
+    color: red;
 }
